@@ -12,6 +12,8 @@
 #include <stdio.h> // allow c Library db
 #include <string>  // allow using string //! using iostream make this usless
 #include <vector>
+
+#include "header.h" // include anyfile /file from your choice in src and subfolders like "subfolder/Yourfile"
 // more infos about "include" search Google z.b "iostream reference"
 
 void notmain(int); // add to use more function then only "main"
@@ -102,6 +104,7 @@ cin.get();
 getline(cin, name); // to get a line of input in name z.b. first and second name
 
  c = getchar(); // get only first keypress same as "c = cin.get();"
+getch() //! msdos
 
 << == read data from stream
 >> == write data to stream
@@ -126,3 +129,5 @@ a != b;  "not equal" - Operator not equal
 a += 3; "add 3 to a"
 a -= 3; "take 3 off a"
 */
+
+fflush(stdin); // Der Tastaturpuffer wird hier gelöscht.
